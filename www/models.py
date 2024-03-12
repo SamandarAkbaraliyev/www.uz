@@ -31,3 +31,7 @@ class Site(BaseModel):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
 
+class Visitor(BaseModel):
+    visitor_os = models.CharField(max_length=256)
+    visitor_browser = models.CharField(max_length=256)
+
